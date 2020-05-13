@@ -1,0 +1,2 @@
+In this project I have applied a feed forward Neural Network to FARS dataset. This is following the implemenatation of the "Abdelwahab, H. T. and Abdel-Aty, M. A. (2001) ‘Development of Artificial Neural Network Models to Predict Driver Injury Severity in Traffic Accidents at Signalized Intersections’. 
+The Neural Network is created from scratch using only Numpy and pandas. The Detailed description of the steps can be seen in the project report.
