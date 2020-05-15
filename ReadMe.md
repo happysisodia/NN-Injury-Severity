@@ -38,17 +38,25 @@ The distribution of data for Severity for severity of injury is shown in fig. 3
 <h3>Neural Network</h3>
 The Multilayer perceptron(MLP) Made for this classification consists of three layers- Input Layer, hidden Layer and Output Layer. The MLP was made using only numpy and pandas library in python from scratch and none of the other toolkit(premade MLP) was used.
 The connection in MLP was feed forward with backpropagation using stochastic gradient descent. The Number of nodes in the input layer was 4 , hidden layer has 9 nodes and output layer also has 4 nodes. The setting of the value for various hyperparameters of the neural network is discussed in detail below:
-Learning Rate: Learning rate being one of the most important parameter of the Neural Networks that controls the rate at which the model learns. To Select the optimal Learning rate, I trained and evaluated the Neural Network for a range of Learning Rate starting from 0.05 to 0.5 in increments of 0.05. At 0.35 the learning rate became too large and the performance of the system started to oscillate over training epochs.
+
+Learning Rate:
+Learning rate being one of the most important parameter of the Neural Networks that controls the rate at which the model learns. To Select the optimal Learning rate, I trained and evaluated the Neural Network for a range of Learning Rate starting from 0.05 to 0.5 in increments of 0.05. At 0.35 the learning rate became too large and the performance of the system started to oscillate over training epochs.
 Till 0.15 the learning rate was too small and the learning rate was getting stuck in the local optimal. The Performance of the system was nearly identical for the 0.20 and 0.25. For this reason , I selected, trained and evaluated the system at the learning rate of 0.225
+
 Bias: The effect of bias on the overall accuracy of the model was tested and found that the model gave better results with bias but the increment was very small and nearly negligent.
+
 Weight: The Value of weight was done in random but made sure that the initial value was in the range of -0.5 to 0.5.
+
 Activation Function: for the purpose of this classification, I used sigmoidal activation function.
+
 Momentum: The value of momentum helps the algorithm reach the value of global minimum faster. For the purpose of this classification the value selected was 0.35.
+
 Neural network operate in two distinct phase: Training and testing. The Dataset for these two phases divided in a ratio 7:3. The Model was then trained on the training data.
 
 <h3>Results</h3>
 After the model had been trained, I executed the model on the test data. Figure 5 shows the classification report of the model when executed on the test data. The model gave an accuracy of 46%.
 The figure show the graph of TSS vs Epoch iteration graph on the training data. The Epoch on x-axis are in the Quantity of 100, whereas the value on y-axis is the sum of square error(TSS) for the training data.
+
 ![alt text](Images/tss1.JPG)
 
 Figure show the Accuracy vs Epoch graph iteration graph on the training data. The Epoch on x-axis are in the Quantity of 100, whereas the value on y-axis is the accuracy obtained on the training data.
